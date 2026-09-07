@@ -128,7 +128,7 @@ function generateSkills() {
     
     return `
         <section class="content-section">
-            <h2>Technical Stack</h2>
+            <h2>Technical Skills</h2>
             <div class="skills-grid">
                 ${cols}
             </div>
@@ -143,9 +143,9 @@ function generateContact() {
             <h2>Connect</h2>
             <p class="mono-text" style="margin-bottom: 2rem;">Seeking new opportunities or collaborations? My inbox is always open.</p>
             <div class="contact-links" style="display:flex; gap: 20px; flex-wrap: wrap;">
-                <a href="mailto:${profile.email}" class="btn contact-btn">Email Direct</a>
-                <a href="${profile.linkedin}" target="_blank" class="btn contact-btn">LinkedIn Profile</a>
-                <a href="${profile.github}" target="_blank" class="btn contact-btn">GitHub Repos</a>
+                <a href="mailto:${profile.email}" class="btn contact-btn">EMAIL DIRECT</a>
+                <a href="${profile.linkedin}" target="_blank" class="btn contact-btn">LINKEDIN PROFILE</a>
+                <a href="tel:${profile.phone}" class="btn contact-btn">CALL DIRECTLY</a>
             </div>
         </section>
     `;
@@ -199,7 +199,7 @@ function renderProjectCards(filter) {
         return;
     }
 
-    filteredProjects.forEach(project => {
+        filteredProjects.forEach(project => {
         const card = document.createElement('div');
         card.className = 'card';
         
