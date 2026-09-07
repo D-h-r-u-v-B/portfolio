@@ -1,0 +1,69 @@
+{
+  "profile": {
+    "name": "Dhruv Birthal",
+    "title": "Mechatronics Engineer",
+    "email": "dhruv.birthal@example.com",
+    "github": "https://github.com/dhruvbirthal",
+    "linkedin": "https://linkedin.com/in/dhruvbirthal",
+    "aboutMe": [
+      "Engineering specialist focused on defense-aerospace architecture, autonomous swarm coordination, and precision mechatronic systems.",
+      "Passionate about bridging the gap between mechanical design and intelligent software control, focusing on high-stress, fault-tolerant robotic platforms."
+    ]
+  },
+  "skills": [
+    {
+      "category": "CAD & Simulation",
+      "items": ["SolidWorks", "Fusion 360", "PTC Creo", "Ansys FEA", "MATLAB Simulink"]
+    },
+    {
+      "category": "Manufacturing (DFM)",
+      "items": ["CNC Machining", "3D Printing (FDM/SLA)", "Injection Molding Design", "Sheet Metal Fabrication"]
+    },
+    {
+      "category": "Mechatronics & Integration",
+      "items": ["C++ / Python", "ROS2 / PX4", "PCB Design (Altium)", "Embedded Systems", "Control Theory"]
+    },
+    {
+      "category": "Testing & Validation",
+      "items": ["Data Acquisition (DAQ)", "Hardware-in-the-Loop", "Vibration Analysis", "Thermal Cycling"]
+    }
+  ],
+  "projectCategories": [
+    "All",
+    "Swarm Systems",
+    "Mechatronics",
+    "Airframe R&D"
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Alpha Swarm Drone",
+      "category": "Swarm Systems",
+      "glbModel": "assets/models/alpha_drone.glb",
+      "thumbnail": "assets/images/alpha_drone_thumb.jpg",
+      "summary": "A fully autonomous quadcopter designed for decentralized swarm operations and real-time mapping.",
+      "specs": ["Weight: 250g", "Endurance: 45 min", "Payload: 50g"],
+      "tags": ["Autonomous", "Swarm", "Carbon Fiber", "ROS2"]
+    },
+    {
+      "id": "p2",
+      "title": "Robotic Actuator V2",
+      "category": "Mechatronics",
+      "glbModel": "assets/models/actuator_v2.glb",
+      "thumbnail": "assets/images/actuator_thumb.jpg",
+      "summary": "High-torque, low-latency joint actuator designed for precision robotic arms and legged robotics.",
+      "specs": ["Torque: 15 Nm", "Voltage: 24V", "Weight: 1.2kg"],
+      "tags": ["Actuator", "Precision", "BLDC", "FOC"]
+    },
+    {
+      "id": "p3",
+      "title": "Supersonic Wingfoil",
+      "category": "Airframe R&D",
+      "glbModel": "assets/models/wingfoil.glb",
+      "thumbnail": "assets/images/wingfoil_thumb.jpg",
+      "summary": "Experimental wing profile designed for high-Mach atmospheric entry with integrated thermal shielding.",
+      "specs": ["Material: Titanium Alloy", "Mach: 2.5", "FEA Validated"],
+      "tags": ["Aerodynamics", "Supersonic", "FEA", "CFD"]
+    }
+  ]
+}

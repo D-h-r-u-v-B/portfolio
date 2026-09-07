@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Birthal | Engineering Portfolio</title>
+    <!-- Google Fonts: Rajdhani & Roboto Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Model Viewer -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Column: Fixed Sidebar (Populated via JS) -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Loading state fallback -->
+            <div style="padding: 2rem; color: var(--text-muted); font-family: var(--font-mono);">
+                Initializing System Data...
+            </div>
+        </aside>
+
+        <!-- Right Column: SPA Dynamic Main Content -->
+        <main class="main-content" id="app-content">
+            <!-- Pages are dynamically injected here and animated via CSS -->
+        </main>
+    </div>
+
+    <!-- 3D Model Interactive Modal -->
+    <div id="model-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn" aria-label="Close modal">&times;</button>
+            <h2 id="modal-title">Project Title</h2>
+            <div id="viewer-container">
+                <!-- model-viewer injected here -->
+            </div>
+            <div id="modal-info"></div>
+        </div>
+    </div>
+
+    <!-- SPA Logic -->
+    <script src="app.js" defer></script>
+</body>
+</html>

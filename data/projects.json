@@ -1,0 +1,32 @@
+[
+    {
+        "id": "p1",
+        "title": "Alpha Swarm Drone",
+        "category": "Swarm Systems",
+        "glbModel": "assets/models/alpha_drone.glb",
+        "thumbnail": "assets/images/alpha_drone_thumb.jpg",
+        "summary": "A fully autonomous quadcopter designed for decentralized swarm operations and real-time mapping.",
+        "specs": ["Weight: 250g", "Endurance: 45 min", "Payload: 50g"],
+        "tags": ["Autonomous", "Swarm", "Carbon Fiber", "ROS2"]
+    },
+    {
+        "id": "p2",
+        "title": "Robotic Actuator V2",
+        "category": "Mechatronics",
+        "glbModel": "assets/models/actuator_v2.glb",
+        "thumbnail": "assets/images/actuator_thumb.jpg",
+        "summary": "High-torque, low-latency joint actuator designed for precision robotic arms and legged robotics.",
+        "specs": ["Torque: 15 Nm", "Voltage: 24V", "Weight: 1.2kg"],
+        "tags": ["Actuator", "Precision", "BLDC", "FOC"]
+    },
+    {
+        "id": "p3",
+        "title": "Supersonic Wingfoil",
+        "category": "Airframe R&D",
+        "glbModel": "assets/models/wingfoil.glb",
+        "thumbnail": "assets/images/wingfoil_thumb.jpg",
+        "summary": "Experimental wing profile designed for high-Mach atmospheric entry with integrated thermal shielding.",
+        "specs": ["Material: Titanium Alloy", "Mach: 2.5", "FEA Validated"],
+        "tags": ["Aerodynamics", "Supersonic", "FEA", "CFD"]
+    }
+]
