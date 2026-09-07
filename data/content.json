@@ -2,9 +2,9 @@
   "profile": {
     "name": "Dhruv Birthal",
     "title": "Mechatronics Engineer",
-    "email": "dhruv.birthal@example.com",
-    "github": "https://github.com/dhruvbirthal",
-    "linkedin": "https://linkedin.com/in/dhruvbirthal",
+    "email": "mailto:birthaldhruv@gmail.com",
+    "phone": "tel:+919780513503",
+    "linkedin": "https://www.linkedin.com/in/dhruv-birthal-642862204",
     "aboutMe": [
       "Engineering specialist focused on defense-aerospace architecture, autonomous swarm coordination, and precision mechatronic systems.",
       "Passionate about bridging the gap between mechanical design and intelligent software control, focusing on high-stress, fault-tolerant robotic platforms."
@@ -36,34 +36,34 @@
   ],
   "projects": [
     {
-      "id": "p1",
-      "title": "Alpha Swarm Drone",
+      "id": "vajra-carrier",
+      "title": "Project Hailing Swarm - Vajra Carrier",
       "category": "Swarm Systems",
-      "glbModel": "assets/models/alpha_drone.glb",
-      "thumbnail": "assets/images/alpha_drone_thumb.jpg",
-      "summary": "A fully autonomous quadcopter designed for decentralized swarm operations and real-time mapping.",
-      "specs": ["Weight: 250g", "Endurance: 45 min", "Payload: 50g"],
-      "tags": ["Autonomous", "Swarm", "Carbon Fiber", "ROS2"]
+      "glbModel": "assets/models/vajra.glb",
+      "thumbnail": "assets/images/vajra_thumb.jpg",
+      "summary": "Heavy-lift multirotor engineered for rapid fabrication and automated munition deployment.",
+      "specs": ["Frame: Carbon-Polymer", "Role: Munition Transport", "Analysis: Ansys FEA"],
+      "tags": ["Creo", "Ansys", "Heavy-Lift", "UAV"]
     },
     {
-      "id": "p2",
-      "title": "Robotic Actuator V2",
+      "id": "perching-gripper",
+      "title": "Passive Release Gripper Mechanism",
       "category": "Mechatronics",
-      "glbModel": "assets/models/actuator_v2.glb",
-      "thumbnail": "assets/images/actuator_thumb.jpg",
-      "summary": "High-torque, low-latency joint actuator designed for precision robotic arms and legged robotics.",
-      "specs": ["Torque: 15 Nm", "Voltage: 24V", "Weight: 1.2kg"],
-      "tags": ["Actuator", "Precision", "BLDC", "FOC"]
+      "glbModel": "assets/models/perching_mec.glb",
+      "thumbnail": "assets/images/gripper_thumb.jpg",
+      "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances. Analyzed multi-layer power transmission where gear 1 serves as the primary driver.",
+      "specs": ["Actuation: Passive/Weight", "Tolerances: High Precision", "Use Case: Drone Delivery"],
+      "tags": ["Kinematics", "SolidWorks", "DFM"]
     },
     {
-      "id": "p3",
-      "title": "Supersonic Wingfoil",
-      "category": "Airframe R&D",
-      "glbModel": "assets/models/wingfoil.glb",
-      "thumbnail": "assets/images/wingfoil_thumb.jpg",
-      "summary": "Experimental wing profile designed for high-Mach atmospheric entry with integrated thermal shielding.",
-      "specs": ["Material: Titanium Alloy", "Mach: 2.5", "FEA Validated"],
-      "tags": ["Aerodynamics", "Supersonic", "FEA", "CFD"]
+      "id": "child-drone",
+      "title": "Child Drone (Bullet Swarm)",
+      "category": "Swarm Systems",
+      "glbModel": "assets/models/child_drone.glb",
+      "thumbnail": "assets/images/child_drone_thumb.jpg",
+      "summary": "High-speed strike drone iterations featuring custom motor brackets and high-g impact tolerant enclosures.",
+      "specs": ["Airframe: FDM Carbon-Nylon", "Packaging: IP-Rated", "Testing: Vibration/Modal"],
+      "tags": ["Aerospace", "SolidWorks", "Swarm"]
     }
   ]
 }
