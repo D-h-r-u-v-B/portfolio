@@ -1,7 +1,6 @@
 let appData = {};
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Fetch unified JSON data controlling the SPA
     fetch('data/content.json')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initSPA() {
     buildSidebar();
-    // Default route
     navigateTo('about');
     setupModalListeners();
 }
@@ -50,7 +48,7 @@ function buildSidebar() {
             e.preventDefault();
             const route = e.target.getAttribute('data-route');
             
-            // Update active styling
+            // Update active state
             document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
             e.target.classList.add('active');
             
@@ -62,7 +60,7 @@ function buildSidebar() {
 function navigateTo(route) {
     const contentArea = document.getElementById('app-content');
     
-    // Add fade-out transition
+    // Trigger fade out
     if (contentArea.firstElementChild) {
         contentArea.firstElementChild.classList.add('fade-out');
     }
@@ -184,7 +182,7 @@ function renderProjectCards(filter) {
     if (!grid) return;
     
     let filteredProjects = appData.projects;
-    if (filter !== appData.projectCategories[0]) { // 0 is "All"
+    if (filter !== appData.projectCategories[0]) { 
         filteredProjects = appData.projects.filter(p => p.category === filter);
     }
     
@@ -195,17 +193,33 @@ function renderProjectCards(filter) {
         return;
     }
 
-        filteredProjects.forEach(project => {
+    filteredProjects.forEach(project => {
         const card = document.createElement('div');
         card.className = 'card';
         
-        const mediaContent = project.thumbnail 
-            ? `<img src="${project.thumbnail}" alt="${project.title}">`
-            : `<div style="display:flex;align-items:center;justify-content:center;height:100%;" class="mono-text">No Visuals</div>`;
+        let mediaContent = '';
+        if (project.images && project.images.length > 0) {
+            mediaContent = `
+                <div class="carousel-track">
+                    ${project.images.map(img => `<img src="${img}" alt="${project.title}" class="carousel-img">`).join('')}
+                </div>
+            `;
+        } else if (project.thumbnail) {
+            mediaContent = `
+                <div class="carousel-track">
+                    <img src="${project.thumbnail}" alt="${project.title}" class="carousel-img">
+                </div>
+            `;
+        } else {
+            mediaContent = `<div style="display:flex;align-items:center;justify-content:center;height:100%;" class="mono-text">No Visuals</div>`;
+        }
+
+        const statusBadgeText = project.status || 'Ongoing';
 
         card.innerHTML = `
             <div class="card-media">
                 <span class="badge">${project.category}</span>
+                <span class="badge status-badge">${statusBadgeText}</span>
                 ${mediaContent}
             </div>
             <div class="card-content">

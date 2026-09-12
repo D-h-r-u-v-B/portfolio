@@ -6,7 +6,7 @@
     "phone": "tel:+919780513503",
     "linkedin": "https://www.linkedin.com/in/dhruv-birthal-642862204",
     "aboutMe": [
-      "TESTING  TESTING Engineering specialist focused on defense-aerospace architecture, autonomous swarm coordination, and precision mechatronic systems.",
+      "Engineering specialist focused on defense-aerospace architecture, autonomous swarm coordination, and precision mechatronic systems.",
       "Passionate about bridging the gap between mechanical design and intelligent software control, focusing on high-stress, fault-tolerant robotic platforms."
     ]
   },
@@ -30,17 +30,20 @@
   ],
   "projectCategories": [
     "All",
-    "Swarm Systems",
-    "Mechatronics",
-    "Airframe R&D"
+    "Manufacturing",
+    "RnD"
   ],
   "projects": [
     {
       "id": "vajra-carrier",
       "title": "Project Hailing Swarm - Vajra Carrier",
-      "category": "Swarm Systems",
+      "category": "Manufacturing",
+      "status": "Ongoing",
       "glbModel": "assets/models/vajra.glb",
-      "thumbnail": "assets/images/vajra_thumb.jpg",
+      "images": [
+        "assets/images/vajra_thumb.jpg",
+        "assets/images/vajra_side.jpg"
+      ],
       "summary": "Heavy-lift multirotor engineered for rapid fabrication and automated munition deployment.",
       "specs": ["Frame: Carbon-Polymer", "Role: Munition Transport", "Analysis: Ansys FEA"],
       "tags": ["Creo", "Ansys", "Heavy-Lift", "UAV"]
@@ -48,9 +51,13 @@
     {
       "id": "perching-gripper",
       "title": "Passive Release Gripper Mechanism",
-      "category": "Mechatronics",
+      "category": "RnD",
+      "status": "Completed",
       "glbModel": "assets/models/perching_mec.glb",
-      "thumbnail": "assets/images/gripper_thumb.jpg",
+      "images": [
+        "assets/images/gripper_thumb.jpg",
+        "assets/images/gripper_top.jpg"
+      ],
       "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances. Analyzed multi-layer power transmission where gear 1 serves as the primary driver.",
       "specs": ["Actuation: Passive/Weight", "Tolerances: High Precision", "Use Case: Drone Delivery"],
       "tags": ["Kinematics", "SolidWorks", "DFM"]
@@ -58,9 +65,13 @@
     {
       "id": "child-drone",
       "title": "Child Drone (Bullet Swarm)",
-      "category": "Swarm Systems",
+      "category": "RnD",
+      "status": "Ongoing",
       "glbModel": "assets/models/child_drone.glb",
-      "thumbnail": "assets/images/child_drone_thumb.jpg",
+      "images": [
+        "assets/images/child_drone_thumb.jpg",
+        "assets/images/child_drone_iso.jpg"
+      ],
       "summary": "High-speed strike drone iterations featuring custom motor brackets and high-g impact tolerant enclosures.",
       "specs": ["Airframe: FDM Carbon-Nylon", "Packaging: IP-Rated", "Testing: Vibration/Modal"],
       "tags": ["Aerospace", "SolidWorks", "Swarm"]

@@ -404,22 +404,39 @@ body::before {
     position: relative;
     border-bottom: 1px solid var(--border-glass);
     transition: background-color 0.4s ease, border-color 0.4s ease;
+    overflow: hidden; /* Contains the scroll track */
 }
 
-.card-media img {
+/* Horizontal scroll track for image carousel */
+.carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100%;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+.carousel-track::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.carousel-img {
+    flex: 0 0 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    scroll-snap-align: start;
     opacity: 0.85;
     transition: opacity 0.4s ease;
 }
 
-.card:hover .card-media img {
+.card:hover .carousel-img {
     opacity: 1;
 }
 
 .badge {
     position: absolute;
+    z-index: 2; /* Float above carousel */
     top: 12px;
     right: 12px;
     background-color: var(--bg-surface);
@@ -432,7 +449,19 @@ body::before {
     padding: 6px 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease;
+    transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, opacity 0.4s ease;
+}
+
+.status-badge {
+    top: auto;
+    bottom: 12px;
+    opacity: 0.6;
+}
+
+.card:hover .status-badge {
+    opacity: 1;
+    color: var(--accent-secondary);
+    border-color: var(--accent-secondary);
 }
 
 .card-content {
