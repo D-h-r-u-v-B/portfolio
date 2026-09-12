@@ -210,9 +210,14 @@ function generateProjectDetail(projectId) {
             </div>
 
             <div class="detail-body">
-                <p class="mono-text" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem; color: var(--text-primary);">
+                <p class="mono-text" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: ${project.description ? '1.5rem' : '3rem'}; color: var(--text-primary);">
                     ${project.summary}
                 </p>
+                ${project.description ? `
+                <p class="mono-text" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem; color: var(--text-primary);">
+                    ${project.description}
+                </p>
+                ` : ''}
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
                     <div class="card-specs mono-text" style="margin-bottom: 0;">

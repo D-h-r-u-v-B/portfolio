@@ -36,30 +36,18 @@
   ],
   "projects": [
     {
-      "id": "vajra-v1",
-      "title": "Project Hailing Swarm - Vajra V1",
-      "category": "Manufacturing",
-      "status": "Ongoing",
-      "time": "Feb 2026 - Present",
-      "glbModel": "assets/models/vajra.glb",
-      "images": [
-        "assets/images/vajra_thumb.jpg",
-        "assets/images/vajra_side.jpg"
-      ],
-      "summary": "Heavy-lift multirotor engineered for rapid fabrication and automated munition deployment.",
-      "specs": ["Frame: Carbon-Polymer", "Role: Munition Transport", "Analysis: Ansys FEA"],
-      "tags": ["Creo", "Ansys", "Heavy-Lift"],
-      "learning": ["Advanced Composites", "Vibration Mitigation"]
-    },
-    {
       "id": "gesture-robotic-arm",
       "title": "Gesture Controlled Robotic Arm",
       "category": "Manufacturing",
       "status": "Completed",
       "time": "Date TBD",
       "glbModel": "",
-      "images": ["assets/images/placeholder.jpg"],
+      "images": [
+        "assets/images/gesture-robotic-arm/1.jpg",
+        "assets/images/gesture-robotic-arm/2.jpg"
+      ],
       "summary": "Design and manufacturing of a robotic manipulator mapped to human gesture control.",
+      "description": "This mechatronic system translates human hand movements into precise mechanical actions using kinematic mapping and real-time signal processing. The architecture prioritizes low-latency actuation and utilizes custom-machined linkages to ensure smooth, repeatable motion profiles under dynamic loads.",
       "specs": ["Actuation: Servo/Stepper", "Control: Kinematic Mapping"],
       "tags": ["Mechatronics", "Embedded Systems"],
       "learning": ["Inverse Kinematics", "Real-time Signal Processing"]
@@ -71,10 +59,13 @@
       "status": "Ongoing",
       "time": "Date TBD",
       "glbModel": "",
-      "images": ["assets/images/placeholder.jpg"],
-      "summary": "Manufacturing details for the Nidar 27 platform.",
+      "images": [
+        "assets/images/nidar-27/1.jpg"
+      ],
+      "summary": "Manufacturing and assembly architecture for the Nidar 27 platform.",
+      "description": "A comprehensive manufacturing and assembly pipeline detailing the integration of critical sub-systems for the Nidar 27 platform. The focus of this phase is optimizing component geometry for rapid additive manufacturing and CNC machining without sacrificing structural integrity.",
       "specs": ["Add details here"],
-      "tags": ["Manufacturing"],
+      "tags": ["Manufacturing", "DFM"],
       "learning": ["Add learning here"]
     },
     {
@@ -84,8 +75,12 @@
       "status": "Completed",
       "time": "April 2026",
       "glbModel": "assets/models/perching_mec.glb",
-      "images": ["assets/images/gripper_thumb.jpg"],
-      "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances.",
+      "images": [
+        "assets/images/perching-mechanism/1.jpg",
+        "assets/images/perching-mechanism/2.jpg"
+      ],
+      "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances. Analyzed multi-layer power transmission where gear 1 serves as the primary driver.",
+      "description": "Engineered specifically for autonomous drone delivery applications, this passive release mechanism utilizes the payload's own mass to actuate the gripper release sequence. Strict geometric tolerances and gear ratio optimizations ensure reliable payload detachment without requiring auxiliary electronic actuators, reducing overall vehicle weight and complexity.",
       "specs": ["Actuation: Passive/Weight", "Tolerances: High Precision"],
       "tags": ["Kinematics", "SolidWorks", "DFM"],
       "learning": ["Gear Ratio Optimization", "Tolerance Stacking"]
@@ -97,10 +92,13 @@
       "status": "Ongoing",
       "time": "Date TBD",
       "glbModel": "",
-      "images": ["assets/images/placeholder.jpg"],
-      "summary": "Iteration 4 of the Pralay defense/aerospace architecture.",
+      "images": [
+        "assets/images/pralay-v4/1.jpg"
+      ],
+      "summary": "Iteration 4 manufacturing sequence of the Pralay defense architecture.",
+      "description": "Building upon previous conceptual iterations, the V4 phase translates the Pralay architecture into physical, manufacturable components. This stage involves rigorous material selection and the development of custom fixturing to streamline the assembly of the primary chassis.",
       "specs": ["Add details here"],
-      "tags": ["Manufacturing"],
+      "tags": ["Aerospace", "Manufacturing"],
       "learning": ["Add learning here"]
     },
     {
@@ -110,11 +108,31 @@
       "status": "Ongoing",
       "time": "Date TBD",
       "glbModel": "",
-      "images": ["assets/images/placeholder.jpg"],
+      "images": [
+        "assets/images/rudra-v1/1.jpg"
+      ],
       "summary": "First manufacturing iteration of the Rudra platform.",
+      "description": "The Rudra V1 prototype represents the initial transition from CAD to physical reality. Key engineering efforts focus on validating the structural layout through rapid prototyping and assessing the manufacturability of the core load-bearing components.",
       "specs": ["Add details here"],
-      "tags": ["Manufacturing"],
+      "tags": ["Manufacturing", "Prototyping"],
       "learning": ["Add learning here"]
+    },
+    {
+      "id": "vajra-v1",
+      "title": "Project Hailing Swarm - Vajra V1",
+      "category": "Manufacturing",
+      "status": "Ongoing",
+      "time": "Feb 2026 - Present",
+      "glbModel": "assets/models/vajra.glb",
+      "images": [
+        "assets/images/vajra-v1/1.jpg",
+        "assets/images/vajra-v1/2.jpg"
+      ],
+      "summary": "Heavy-lift multirotor engineered for rapid fabrication and automated munition deployment.",
+      "description": "Designed for rapid deployment and fabrication, this heavy-lift multirotor integrates carbon-polymer composites to maximize payload capacity. Extensive finite element analysis was conducted on the airframe to ensure it could withstand the severe modal vibrations and dynamic stress loads induced during automated munition release sequences.",
+      "specs": ["Frame: Carbon-Polymer", "Role: Munition Transport", "Analysis: Ansys FEA"],
+      "tags": ["Creo", "Ansys", "Heavy-Lift"],
+      "learning": ["Advanced Composites", "Vibration Mitigation"]
     },
     {
       "id": "space-debris",
@@ -123,8 +141,11 @@
       "status": "Ongoing",
       "time": "Date TBD",
       "glbModel": "",
-      "images": ["assets/images/placeholder.jpg"],
+      "images": [
+        "assets/images/space-debris/1.jpg"
+      ],
       "summary": "Research and development concerning orbital debris tracking and capture mechanics.",
+      "description": "This R&D initiative explores the mechanical and kinetic challenges of capturing uncontrolled orbital debris. The project involves theoretical modeling of impact forces, material stress during capture, and the conceptual design of low-mass, high-strength containment mechanisms.",
       "specs": ["Add details here"],
       "tags": ["Orbital Mechanics", "R&D"],
       "learning": ["Add learning here"]
@@ -136,8 +157,12 @@
       "status": "Completed",
       "time": "2025",
       "glbModel": "",
-      "images": ["assets/images/placeholder.jpg"],
+      "images": [
+        "assets/images/vfs-42nd-sdc/1.jpg",
+        "assets/images/vfs-42nd-sdc/2.jpg"
+      ],
       "summary": "Vertical Flight Society 42nd Student Design Competition entry.",
+      "description": "As part of the Vertical Flight Society competition, this project involved the complete aerodynamic and structural design of an eVTOL aircraft. The engineering focus centered on balancing the thrust requirements for vertical lift with the aerodynamic efficiency needed for sustained high-speed forward flight.",
       "specs": ["Aircraft: eVTOL", "Performance: High-Speed Forward Flight"],
       "tags": ["Aerodynamics", "Rotorcraft Design"],
       "learning": ["Structural Analysis", "Team Leadership"]
@@ -149,10 +174,13 @@
       "status": "Completed",
       "time": "Date TBD",
       "glbModel": "",
-      "images": ["assets/images/placeholder.jpg"],
+      "images": [
+        "assets/images/parshu-v1-v2/1.jpg"
+      ],
       "summary": "Conceptual architecture and structural layout for the Parshu airframe.",
+      "description": "The Parshu platform was developed entirely in the conceptual phase to establish base geometric and payload parameters. Iterations V1 and V2 focused heavily on packaging optimization, avionics placement, and ensuring a favorable center of gravity for dynamic flight operations.",
       "specs": ["Add details here"],
-      "tags": ["Conceptual Design"],
+      "tags": ["Conceptual Design", "CAD"],
       "learning": ["Add learning here"]
     },
     {
@@ -162,10 +190,14 @@
       "status": "Completed",
       "time": "Date TBD",
       "glbModel": "",
-      "images": ["assets/images/placeholder.jpg"],
+      "images": [
+        "assets/images/pralay-v1-v2-v3/1.jpg",
+        "assets/images/pralay-v1-v2-v3/2.jpg"
+      ],
       "summary": "Evolution of the Pralay conceptual layout.",
+      "description": "Spanning three major conceptual overhauls, the Pralay design evolution highlights an iterative approach to defense architecture. Each version progressively refined the airframe's stiffness-to-weight ratio and optimized the internal volumetric efficiency for modular payloads.",
       "specs": ["Add details here"],
-      "tags": ["Conceptual Design"],
+      "tags": ["Conceptual Design", "Iteration"],
       "learning": ["Iterative Prototyping"]
     },
     {
@@ -175,10 +207,13 @@
       "status": "Ongoing",
       "time": "Date TBD",
       "glbModel": "",
-      "images": ["assets/images/placeholder.jpg"],
+      "images": [
+        "assets/images/rudra-v2/1.jpg"
+      ],
       "summary": "Advanced conceptual framework for Rudra iteration 2.",
+      "description": "Applying the lessons learned from the initial V1 manufacturing prototype, the Rudra V2 conceptual model introduces significant geometric refinements. The focus is on reducing part count, streamlining assembly, and increasing the overall survivability of the platform.",
       "specs": ["Add details here"],
-      "tags": ["Conceptual Design"],
+      "tags": ["Conceptual Design", "Architecture"],
       "learning": ["Add learning here"]
     }
   ]
