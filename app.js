@@ -42,10 +42,6 @@ function buildSidebar() {
                 <li><a href="#" data-route="contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="social-links">
-            <a href="${profile.github}" target="_blank">GitHub</a>
-            <a href="${profile.linkedin}" target="_blank">LinkedIn</a>
-        </div>
     `;
 
     // Event delegation for navigation routing
