@@ -26,9 +26,13 @@ function buildSidebar() {
     const sidebar = document.getElementById('sidebar');
     const profile = appData.profile;
     
+    const avatarHtml = profile.avatar 
+        ? `<img src="${profile.avatar}" alt="${profile.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">` 
+        : '';
+
     sidebar.innerHTML = `
         <div class="profile-section">
-            <div class="profile-img-placeholder"></div>
+            <div class="profile-img-placeholder">${avatarHtml}</div>
             <h1>${profile.name}</h1>
             <p class="subtitle">${profile.title}</p>
         </div>
