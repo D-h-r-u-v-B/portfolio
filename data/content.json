@@ -31,13 +31,13 @@
   "projectCategories": [
     "All",
     "Manufacturing",
-    "RnD",
+    "R&D",
     "Conceptual Design"
   ],
   "projects": [
     {
-      "id": "vajra-carrier",
-      "title": "Project Hailing Swarm - Vajra Carrier",
+      "id": "vajra-v1",
+      "title": "Project Hailing Swarm - Vajra V1",
       "category": "Manufacturing",
       "status": "Ongoing",
       "time": "Feb 2026 - Present",
@@ -48,52 +48,138 @@
       ],
       "summary": "Heavy-lift multirotor engineered for rapid fabrication and automated munition deployment.",
       "specs": ["Frame: Carbon-Polymer", "Role: Munition Transport", "Analysis: Ansys FEA"],
-      "tags": ["Creo", "Ansys", "Heavy-Lift"]
+      "tags": ["Creo", "Ansys", "Heavy-Lift"],
+      "learning": ["Advanced Composites", "Vibration Mitigation"]
     },
     {
-      "id": "perching-gripper",
-      "title": "Passive Release Gripper Mechanism",
-      "category": "RnD",
+      "id": "gesture-robotic-arm",
+      "title": "Gesture Controlled Robotic Arm",
+      "category": "Manufacturing",
+      "status": "Completed",
+      "time": "Date TBD",
+      "glbModel": "",
+      "images": ["assets/images/placeholder.jpg"],
+      "summary": "Design and manufacturing of a robotic manipulator mapped to human gesture control.",
+      "specs": ["Actuation: Servo/Stepper", "Control: Kinematic Mapping"],
+      "tags": ["Mechatronics", "Embedded Systems"],
+      "learning": ["Inverse Kinematics", "Real-time Signal Processing"]
+    },
+    {
+      "id": "nidar-27",
+      "title": "Nidar 27",
+      "category": "Manufacturing",
+      "status": "Ongoing",
+      "time": "Date TBD",
+      "glbModel": "",
+      "images": ["assets/images/placeholder.jpg"],
+      "summary": "Manufacturing details for the Nidar 27 platform.",
+      "specs": ["Add details here"],
+      "tags": ["Manufacturing"],
+      "learning": ["Add learning here"]
+    },
+    {
+      "id": "perching-mechanism",
+      "title": "Passive Release Perching Mechanism",
+      "category": "Manufacturing",
       "status": "Completed",
       "time": "April 2026",
       "glbModel": "assets/models/perching_mec.glb",
-      "images": [
-        "assets/images/gripper_thumb.jpg",
-        "assets/images/gripper_top.jpg"
-      ],
-      "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances. Analyzed multi-layer power transmission where gear 1 serves as the primary driver.",
-      "specs": ["Actuation: Passive/Weight", "Tolerances: High Precision", "Use Case: Drone Delivery"],
-      "tags": ["Kinematics", "SolidWorks", "DFM"]
+      "images": ["assets/images/gripper_thumb.jpg"],
+      "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances.",
+      "specs": ["Actuation: Passive/Weight", "Tolerances: High Precision"],
+      "tags": ["Kinematics", "SolidWorks", "DFM"],
+      "learning": ["Gear Ratio Optimization", "Tolerance Stacking"]
     },
     {
-      "id": "child-drone",
-      "title": "Child Drone (Bullet Swarm)",
-      "category": "RnD",
+      "id": "pralay-v4",
+      "title": "Pralay V4",
+      "category": "Manufacturing",
       "status": "Ongoing",
-      "time": "Mar 2026 - Present",
-      "glbModel": "assets/models/child_drone.glb",
-      "images": [
-        "assets/images/child_drone_thumb.jpg",
-        "assets/images/child_drone_iso.jpg"
-      ],
-      "summary": "High-speed strike drone iterations featuring custom motor brackets and high-g impact tolerant enclosures.",
-      "specs": ["Airframe: FDM Carbon-Nylon", "Packaging: IP-Rated", "Testing: Vibration/Modal"],
-      "tags": ["Aerospace", "SolidWorks", "Swarm"]
+      "time": "Date TBD",
+      "glbModel": "",
+      "images": ["assets/images/placeholder.jpg"],
+      "summary": "Iteration 4 of the Pralay defense/aerospace architecture.",
+      "specs": ["Add details here"],
+      "tags": ["Manufacturing"],
+      "learning": ["Add learning here"]
     },
     {
-      "id": "agni-pathik",
-      "title": "Agni-Pathik Evacuation System",
+      "id": "rudra-v1",
+      "title": "Rudra V1",
+      "category": "Manufacturing",
+      "status": "Ongoing",
+      "time": "Date TBD",
+      "glbModel": "",
+      "images": ["assets/images/placeholder.jpg"],
+      "summary": "First manufacturing iteration of the Rudra platform.",
+      "specs": ["Add details here"],
+      "tags": ["Manufacturing"],
+      "learning": ["Add learning here"]
+    },
+    {
+      "id": "space-debris",
+      "title": "Space Debris Mitigation",
+      "category": "R&D",
+      "status": "Ongoing",
+      "time": "Date TBD",
+      "glbModel": "",
+      "images": ["assets/images/placeholder.jpg"],
+      "summary": "Research and development concerning orbital debris tracking and capture mechanics.",
+      "specs": ["Add details here"],
+      "tags": ["Orbital Mechanics", "R&D"],
+      "learning": ["Add learning here"]
+    },
+    {
+      "id": "vfs-42nd-sdc",
+      "title": "VFS 42nd SDC 2025",
+      "category": "R&D",
+      "status": "Completed",
+      "time": "2025",
+      "glbModel": "",
+      "images": ["assets/images/placeholder.jpg"],
+      "summary": "Vertical Flight Society 42nd Student Design Competition entry.",
+      "specs": ["Aircraft: eVTOL", "Performance: High-Speed Forward Flight"],
+      "tags": ["Aerodynamics", "Rotorcraft Design"],
+      "learning": ["Structural Analysis", "Team Leadership"]
+    },
+    {
+      "id": "parshu-v1-v2",
+      "title": "Parshu V1 & V2",
       "category": "Conceptual Design",
       "status": "Completed",
-      "time": "March 2026",
-      "glbModel": "assets/models/agni_pathik.glb",
-      "images": [
-        "assets/images/agni_thumb.jpg",
-        "assets/images/agni_flow.jpg"
-      ],
-      "summary": "Automated building evacuation and routing system designed with a multi-layer operational flowchart.",
-      "specs": ["Type: Systems Architecture", "Output: Routing Automation", "Focus: Safety/Logistics"],
-      "tags": ["Systems Engineering", "Automation", "Conceptual"]
+      "time": "Date TBD",
+      "glbModel": "",
+      "images": ["assets/images/placeholder.jpg"],
+      "summary": "Conceptual architecture and structural layout for the Parshu airframe.",
+      "specs": ["Add details here"],
+      "tags": ["Conceptual Design"],
+      "learning": ["Add learning here"]
+    },
+    {
+      "id": "pralay-v1-v2-v3",
+      "title": "Pralay V1, V2, V3",
+      "category": "Conceptual Design",
+      "status": "Completed",
+      "time": "Date TBD",
+      "glbModel": "",
+      "images": ["assets/images/placeholder.jpg"],
+      "summary": "Evolution of the Pralay conceptual layout.",
+      "specs": ["Add details here"],
+      "tags": ["Conceptual Design"],
+      "learning": ["Iterative Prototyping"]
+    },
+    {
+      "id": "rudra-v2",
+      "title": "Rudra V2",
+      "category": "Conceptual Design",
+      "status": "Ongoing",
+      "time": "Date TBD",
+      "glbModel": "",
+      "images": ["assets/images/placeholder.jpg"],
+      "summary": "Advanced conceptual framework for Rudra iteration 2.",
+      "specs": ["Add details here"],
+      "tags": ["Conceptual Design"],
+      "learning": ["Add learning here"]
     }
   ]
 }

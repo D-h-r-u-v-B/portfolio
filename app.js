@@ -219,11 +219,21 @@ function generateProjectDetail(projectId) {
                         <span style="color:var(--accent-primary); display:inline-block; margin-bottom:10px;">Technical Specifications:</span><br>
                         ${specsHtml}
                     </div>
-                    <div>
-                        <span class="mono-text" style="color:var(--accent-primary); display:inline-block; margin-bottom:15px; font-size:0.85rem; text-transform:uppercase;">Applied Technologies:</span>
-                        <div class="tags-container">
-                            ${tagsHtml}
+                    <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+                        <div>
+                            <span class="mono-text" style="color:var(--accent-primary); display:inline-block; margin-bottom:15px; font-size:0.85rem; text-transform:uppercase;">Applied Technologies:</span>
+                            <div class="tags-container">
+                                ${tagsHtml}
+                            </div>
                         </div>
+                        ${project.learning && project.learning.length > 0 ? `
+                        <div>
+                            <span class="mono-text" style="color:var(--accent-primary); display:inline-block; margin-bottom:15px; font-size:0.85rem; text-transform:uppercase;">Key Learnings:</span>
+                            <div class="tags-container">
+                                ${project.learning.map(l => `<span class="tag">${l}</span>`).join('')}
+                            </div>
+                        </div>
+                        ` : ''}
                     </div>
                 </div>
 
