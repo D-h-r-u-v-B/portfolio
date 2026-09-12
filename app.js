@@ -166,7 +166,6 @@ function generateProjects() {
 
     return `
         <section class="content-section">
-            <h2>Systems & R&D</h2>
             <div class="filters">
                 ${filters}
             </div>
