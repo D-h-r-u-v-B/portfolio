@@ -12,26 +12,27 @@
   },
   "skills": [
     {
-      "category": "CAD & Simulation",
-      "items": ["SolidWorks", "Fusion 360", "PTC Creo", "Ansys FEA", "MATLAB Simulink"]
+      "category": "CAD",
+      "items": ["PTC Creo", "SolidWorks", "Fusion 360"]
+    },
+    {
+      "category": "Simulation",
+      "items": ["Ansys Static Structural", "Ansys Transient Structural", "Ansys Modal Analysis", "Ansys Natural Frequency", "MATLAB Simulink"]
     },
     {
       "category": "Manufacturing (DFM)",
-      "items": ["CNC Machining", "3D Printing (FDM/SLA)", "Injection Molding Design", "Sheet Metal Fabrication"]
+      "items": ["3D Printing (FDM/SLA)", "Laser Cutting", "CNC Machining", "Sheet Metal Fabrication"]
     },
     {
-      "category": "Mechatronics & Integration",
-      "items": ["C++ / Python", "ROS2 / PX4", "PCB Design (Altium)", "Embedded Systems", "Control Theory"]
-    },
-    {
-      "category": "Testing & Validation",
-      "items": ["Data Acquisition (DAQ)", "Hardware-in-the-Loop", "Vibration Analysis", "Thermal Cycling"]
+      "category": "Technical Skills",
+      "items": ["Hardware-in-the-Loop", "Strength Testing", "Data Acquisition (DAQ)"]
     }
   ],
   "projectCategories": [
     "All",
     "Manufacturing",
-    "RnD"
+    "RnD",
+    "Conceptual Design"
   ],
   "projects": [
     {
@@ -39,6 +40,7 @@
       "title": "Project Hailing Swarm - Vajra Carrier",
       "category": "Manufacturing",
       "status": "Ongoing",
+      "time": "Feb 2026 - Present",
       "glbModel": "assets/models/vajra.glb",
       "images": [
         "assets/images/vajra_thumb.jpg",
@@ -46,13 +48,14 @@
       ],
       "summary": "Heavy-lift multirotor engineered for rapid fabrication and automated munition deployment.",
       "specs": ["Frame: Carbon-Polymer", "Role: Munition Transport", "Analysis: Ansys FEA"],
-      "tags": ["Creo", "Ansys", "Heavy-Lift", "UAV"]
+      "tags": ["Creo", "Ansys", "Heavy-Lift"]
     },
     {
       "id": "perching-gripper",
       "title": "Passive Release Gripper Mechanism",
       "category": "RnD",
       "status": "Completed",
+      "time": "April 2026",
       "glbModel": "assets/models/perching_mec.glb",
       "images": [
         "assets/images/gripper_thumb.jpg",
@@ -67,6 +70,7 @@
       "title": "Child Drone (Bullet Swarm)",
       "category": "RnD",
       "status": "Ongoing",
+      "time": "Mar 2026 - Present",
       "glbModel": "assets/models/child_drone.glb",
       "images": [
         "assets/images/child_drone_thumb.jpg",
@@ -75,6 +79,21 @@
       "summary": "High-speed strike drone iterations featuring custom motor brackets and high-g impact tolerant enclosures.",
       "specs": ["Airframe: FDM Carbon-Nylon", "Packaging: IP-Rated", "Testing: Vibration/Modal"],
       "tags": ["Aerospace", "SolidWorks", "Swarm"]
+    },
+    {
+      "id": "agni-pathik",
+      "title": "Agni-Pathik Evacuation System",
+      "category": "Conceptual Design",
+      "status": "Completed",
+      "time": "March 2026",
+      "glbModel": "assets/models/agni_pathik.glb",
+      "images": [
+        "assets/images/agni_thumb.jpg",
+        "assets/images/agni_flow.jpg"
+      ],
+      "summary": "Automated building evacuation and routing system designed with a multi-layer operational flowchart.",
+      "specs": ["Type: Systems Architecture", "Output: Routing Automation", "Focus: Safety/Logistics"],
+      "tags": ["Systems Engineering", "Automation", "Conceptual"]
     }
   ]
 }

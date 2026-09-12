@@ -430,7 +430,8 @@ body::before {
     transition: opacity 0.4s ease;
 }
 
-.card:hover .carousel-img {
+.card:hover .carousel-img,
+.card:hover .card-cover-img {
     opacity: 1;
 }
 
@@ -458,7 +459,17 @@ body::before {
     opacity: 0.6;
 }
 
-.card:hover .status-badge {
+.time-badge {
+    top: auto;
+    bottom: 12px;
+    right: auto;
+    left: 12px;
+    font-size: 0.65rem; /* Scaled slightly smaller */
+    opacity: 0.8;
+}
+
+.card:hover .status-badge,
+.card:hover .time-badge {
     opacity: 1;
     color: var(--accent-secondary);
     border-color: var(--accent-secondary);
