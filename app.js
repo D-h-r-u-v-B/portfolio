@@ -92,15 +92,6 @@ function navigateTo(route, param = null) {
             // Ensure sidebar Projects link is active (if navigating back from details)
             document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
             document.querySelector('.sidebar-nav a[data-route="projects"]').classList.add('active');
-        } else if (route === 'projectDetail') {
-            // Attach 3D Modal listener inside the detail view
-            document.querySelectorAll('.view-3d-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const projId = e.target.getAttribute('data-id');
-                    const proj = appData.projects.find(p => p.id === projId);
-                    openModal(proj);
-                });
-            });
         }
         
         // Trigger reflow to ensure the fade-in animation applies
@@ -246,9 +237,11 @@ function generateProjectDetail(projectId) {
                     </div>
                 </div>
 
-                <button class="btn view-3d-btn mono-text" data-id="${project.id}" style="max-width: 300px; padding: 15px;">
-                    ${project.glbModel ? 'View 3D Model' : 'View Documentation'}
-                </button>
+                ${project.glbModel ? `
+                <div style="margin-top: 3rem; border: 1px solid var(--border-glass); background: var(--bg-card-media); border-radius: 8px; overflow: hidden;">
+                    <model-viewer src="${project.glbModel}" auto-rotate camera-controls style="width: 100%; height: 500px; background-color: transparent;"></model-viewer>
+                </div>
+                ` : ''}
             </div>
         </section>
     `;
@@ -311,9 +304,7 @@ function renderProjectCards(filter) {
                 <h3 class="card-title">${project.title}</h3>
                 <p class="card-summary">${project.summary}</p>
                 <div style="margin-top:auto;">
-                    <button class="btn view-3d-btn mono-text" data-id="${project.id}">
-                        ${project.glbModel ? 'View 3D Model' : 'View Documentation'}
-                    </button>
+                    ${project.glbModel ? `<button class="btn view-3d-btn mono-text" data-id="${project.id}">VIEW 3D MODEL</button>` : ''}
                 </div>
             </div>
         `;
@@ -372,14 +363,7 @@ function openModal(project) {
 
     if (project.glbModel) {
         viewerContainer.innerHTML = `
-            <model-viewer
-                src="${project.glbModel}"
-                alt="3D model of ${project.title}"
-                camera-controls
-                orbit-controls
-                shadow-intensity="1"
-                touch-action="pan-y">
-            </model-viewer>
+            <model-viewer src="${project.glbModel}" auto-rotate camera-controls style="width: 100%; height: 500px; background-color: transparent;"></model-viewer>
         `;
     } else {
         viewerContainer.innerHTML = `
