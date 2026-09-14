@@ -42,10 +42,9 @@
       "category": "Manufacturing",
       "status": "Completed",
       "time": "Date TBD",
-      "glbModel": "",
+      "glbModels": [],
       "images": [
-        "assets/images/gesture-robotic-arm/1.jpg",
-        "assets/images/gesture-robotic-arm/2.jpg"
+        "assets/images/gesture-robotic-arm/1.jpg"
       ],
       "summary": "Design and manufacturing of a robotic manipulator mapped to human gesture control.",
       "description": "This mechatronic system translates human hand movements into precise mechanical actions using kinematic mapping and real-time signal processing. The architecture prioritizes low-latency actuation and utilizes custom-machined linkages to ensure smooth, repeatable motion profiles under dynamic loads.",
@@ -59,7 +58,7 @@
       "category": "Manufacturing",
       "status": "Ongoing",
       "time": "Date TBD",
-      "glbModel": "",
+      "glbModels": [],
       "images": [
         "assets/images/nidar-27/1.jpg"
       ],
@@ -75,10 +74,11 @@
       "category": "Manufacturing",
       "status": "Completed",
       "time": "April 2026",
-      "glbModel": "",
+      "glbModels": [
+        "assets/models/perching-mechanism.glb"
+      ],
       "images": [
-        "assets/images/perching-mechanism/1.jpg",
-        "assets/images/perching-mechanism/2.jpg"
+        "assets/images/perching-mechanism/1.jpg"
       ],
       "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances.",
       "description": "Engineered specifically for autonomous drone delivery applications, this passive release mechanism utilizes the payload's own mass to actuate the gripper release sequence. Strict geometric tolerances and gear ratio optimizations ensure reliable payload detachment without requiring auxiliary electronic actuators, reducing overall vehicle weight and complexity.",
@@ -92,7 +92,9 @@
       "category": "Manufacturing",
       "status": "Ongoing",
       "time": "Date TBD",
-      "glbModel": "",
+      "glbModels": [
+        "assets/models/pralay-v4.glb"
+      ],
       "images": [
         "assets/images/pralay-v4/1.jpg"
       ],
@@ -108,7 +110,9 @@
       "category": "Manufacturing",
       "status": "Ongoing",
       "time": "Date TBD",
-      "glbModel": "assets/models/rudra-v1.glb",
+      "glbModels": [
+        "assets/models/rudra-v1.glb"
+      ],
       "images": [
         "assets/images/rudra-v1/1.jpg"
       ],
@@ -124,10 +128,11 @@
       "category": "Manufacturing",
       "status": "Ongoing",
       "time": "Feb 2026 - Present",
-      "glbModel": "",
+      "glbModels": [
+        "assets/models/vajra-v1.glb"
+      ],
       "images": [
-        "assets/images/vajra-v1/1.jpg",
-        "assets/images/vajra-v1/2.jpg"
+        "assets/images/vajra-v1/1.jpg"
       ],
       "summary": "Heavy-lift multirotor engineered for rapid fabrication and automated munition deployment.",
       "description": "Designed for rapid deployment and fabrication, this heavy-lift multirotor integrates carbon-polymer composites to maximize payload capacity. Extensive finite element analysis was conducted on the airframe to ensure it could withstand the severe modal vibrations and dynamic stress loads induced during automated munition release sequences.",
@@ -141,7 +146,7 @@
       "category": "R&D",
       "status": "Ongoing",
       "time": "Date TBD",
-      "glbModel": "",
+      "glbModels": [],
       "images": [
         "assets/images/space-debris/1.jpg"
       ],
@@ -157,10 +162,9 @@
       "category": "R&D",
       "status": "Completed",
       "time": "2025",
-      "glbModel": "",
+      "glbModels": [],
       "images": [
-        "assets/images/vfs-42nd-sdc/1.jpg",
-        "assets/images/vfs-42nd-sdc/2.jpg"
+        "assets/images/vfs-42nd-sdc/1.jpg"
       ],
       "summary": "Vertical Flight Society 42nd Student Design Competition entry.",
       "description": "As part of the Vertical Flight Society competition, this project involved the complete aerodynamic and structural design of an eVTOL aircraft. The engineering focus centered on balancing the thrust requirements for vertical lift with the aerodynamic efficiency needed for sustained high-speed forward flight.",
@@ -174,7 +178,10 @@
       "category": "Conceptual Design",
       "status": "Completed",
       "time": "Date TBD",
-      "glbModel": "",
+      "glbModels": [
+        "assets/models/parshu-v1.glb",
+        "assets/models/parshu-v2.glb"
+      ],
       "images": [
         "assets/images/parshu-v1-v2/1.jpg"
       ],
@@ -185,15 +192,16 @@
       "learning": ["Add learning here"]
     },
     {
-      "id": "pralay-v1-v2-v3",
-      "title": "Pralay V1, V2, V3",
+      "id": "pralay-v3",
+      "title": "Pralay V3",
       "category": "Conceptual Design",
       "status": "Completed",
       "time": "Date TBD",
-      "glbModel": "",
+      "glbModels": [
+        "assets/models/pralay-v3.glb"
+      ],
       "images": [
-        "assets/images/pralay-v1-v2-v3/1.jpg",
-        "assets/images/pralay-v1-v2-v3/2.jpg"
+        "assets/images/pralay-v3/1.jpg"
       ],
       "summary": "Evolution of the Pralay conceptual layout.",
       "description": "Spanning three major conceptual overhauls, the Pralay design evolution highlights an iterative approach to defense architecture. Each version progressively refined the airframe's stiffness-to-weight ratio and optimized the internal volumetric efficiency for modular payloads.",
@@ -207,7 +215,9 @@
       "category": "Conceptual Design",
       "status": "Ongoing",
       "time": "Date TBD",
-      "glbModel": "",
+      "glbModels": [
+        "assets/models/rudra-v2.glb"
+      ],
       "images": [
         "assets/images/rudra-v2/1.jpg"
       ],

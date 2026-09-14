@@ -237,11 +237,11 @@ function generateProjectDetail(projectId) {
                     </div>
                 </div>
 
-                ${project.glbModel ? `
-                <div style="margin-top: 3rem; border: 1px solid var(--border-glass); background: var(--bg-card-media); border-radius: 8px; overflow: hidden;">
-                    <model-viewer src="${project.glbModel}" auto-rotate camera-controls style="width: 100%; height: 500px; background-color: transparent;"></model-viewer>
+                ${project.glbModels && project.glbModels.length > 0 ? project.glbModels.map(modelSrc => `
+                <div style="margin-top: 3rem; margin-bottom: 2rem; border: 1px solid var(--border-glass); background: var(--bg-card-media); border-radius: 8px; overflow: hidden;">
+                    <model-viewer src="${modelSrc}" auto-rotate camera-controls style="width: 100%; height: 500px; background-color: transparent;"></model-viewer>
                 </div>
-                ` : ''}
+                `).join('') : ''}
             </div>
         </section>
     `;
@@ -304,7 +304,7 @@ function renderProjectCards(filter) {
                 <h3 class="card-title">${project.title}</h3>
                 <p class="card-summary">${project.summary}</p>
                 <div style="margin-top:auto;">
-                    ${project.glbModel ? `<button class="btn view-3d-btn mono-text" data-id="${project.id}">VIEW 3D MODEL</button>` : ''}
+                    ${project.glbModels && project.glbModels.length > 0 ? `<button class="btn view-3d-btn mono-text" data-id="${project.id}">VIEW 3D MODEL</button>` : ''}
                 </div>
             </div>
         `;
@@ -361,9 +361,9 @@ function openModal(project) {
         <div class="tags-container" style="margin-top:20px">${tagsHtml}</div>
     `;
 
-    if (project.glbModel) {
+    if (project.glbModels && project.glbModels.length > 0) {
         viewerContainer.innerHTML = `
-            <model-viewer src="${project.glbModel}" auto-rotate camera-controls style="width: 100%; height: 500px; background-color: transparent;"></model-viewer>
+            <model-viewer src="${project.glbModels[0]}" auto-rotate camera-controls style="width: 100%; height: 500px; background-color: transparent;"></model-viewer>
         `;
     } else {
         viewerContainer.innerHTML = `
