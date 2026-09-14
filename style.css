@@ -440,6 +440,40 @@ body::before {
     opacity: 1;
 }
 
+/* ================== CAROUSEL NAVIGATION BUTTONS ================== */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--bg-surface);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--accent-secondary);
+    color: var(--accent-secondary);
+    width: 45px;
+    height: 45px;
+    border-radius: 50% !important; /* Force circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.2rem;
+    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 15px var(--shadow-base);
+}
+
+.carousel-btn:hover {
+    background-color: var(--bg-strong-secondary);
+    box-shadow: 0 0 15px var(--shadow-hover-secondary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn { left: 15px; }
+.next-btn { right: 15px; }
+
+/* ================================================================ */
+
 .badge {
     position: absolute;
     z-index: 2; /* Float above carousel */

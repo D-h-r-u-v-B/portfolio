@@ -175,9 +175,14 @@ function generateProjectDetail(projectId) {
 
     let mediaContent = '';
     if (project.images && project.images.length > 0) {
+        const showButtons = project.images.length > 1;
         mediaContent = `
-            <div class="carousel-track">
-                ${project.images.map(img => `<img src="${img}" alt="${project.title}" class="carousel-img">`).join('')}
+            <div class="carousel-wrapper" style="position: relative; width: 100%; height: 100%;">
+                ${showButtons ? `<button class="carousel-btn prev-btn" onclick="scrollCarousel(-1)">&#10094;</button>` : ''}
+                <div class="carousel-track">
+                    ${project.images.map(img => `<img src="${img}" alt="${project.title}" class="carousel-img">`).join('')}
+                </div>
+                ${showButtons ? `<button class="carousel-btn next-btn" onclick="scrollCarousel(1)">&#10095;</button>` : ''}
             </div>
         `;
     } else {
@@ -384,4 +389,12 @@ function closeModal() {
     modal.classList.add('hidden');
     viewerContainer.innerHTML = ''; // memory conservation
     document.body.style.overflow = 'auto'; 
+}
+
+function scrollCarousel(direction) {
+    const track = document.querySelector('.carousel-track');
+    if (track) {
+        const scrollAmount = track.clientWidth * 0.75;
+        track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
 }
