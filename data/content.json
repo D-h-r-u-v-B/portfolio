@@ -78,7 +78,8 @@
         "assets/models/perching-mechanism.glb"
       ],
       "images": [
-        "assets/images/perching-mechanism/1.jpg"
+        "assets/images/perching-mechanism/1.png",
+        "assets/images/perching-mechanism/2.png"
       ],
       "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances.",
       "description": "Engineered specifically for autonomous drone delivery applications, this passive release mechanism utilizes the payload's own mass to actuate the gripper release sequence. Strict geometric tolerances and gear ratio optimizations ensure reliable payload detachment without requiring auxiliary electronic actuators, reducing overall vehicle weight and complexity.",
@@ -118,7 +119,10 @@
         "assets/models/rudra-v1.glb"
       ],
       "images": [
-        "assets/images/rudra-v1/1.jpg"
+        "assets/images/rudra-v1/1.png",
+        "assets/images/rudra-v1/2.png",
+        "assets/images/rudra-v1/3.png",
+        "assets/images/rudra-v1/4.png"
       ],
       "summary": "First manufacturing iteration of the Rudra platform.",
       "description": "The Rudra V1 prototype represents the initial transition from CAD to physical reality. Key engineering efforts focus on validating the structural layout through rapid prototyping and assessing the manufacturability of the core load-bearing components.",
@@ -136,8 +140,11 @@
         "assets/models/vajra-v1.glb"
       ],
       "images": [
-        "assets/images/vajra-v1/1.jpg",
-        "assets/images/vajra-v1/2.jpg"
+        "assets/images/vajra-v1/1.png",
+        "assets/images/vajra-v1/2.png",
+        "assets/images/vajra-v1/3.png",
+        "assets/images/vajra-v1/4.png",
+        "assets/images/vajra-v1/5.png"
       ],
       "summary": "Heavy-lift multirotor engineered for rapid fabrication and automated munition deployment.",
       "description": "Designed for rapid deployment and fabrication, this heavy-lift multirotor integrates carbon-polymer composites to maximize payload capacity. Extensive finite element analysis was conducted on the airframe to ensure it could withstand the severe modal vibrations and dynamic stress loads induced during automated munition release sequences.",
@@ -188,7 +195,12 @@
         "assets/models/parshu-v2.glb"
       ],
       "images": [
-        "assets/images/parshu-v1-v2/1.jpg"
+        "assets/images/parshu-v1-v2/1.png",
+        "assets/images/parshu-v1-v2/2.png",
+        "assets/images/parshu-v1-v2/3.png",
+        "assets/images/parshu-v1-v2/4.png",
+        "assets/images/parshu-v1-v2/5.png",
+        "assets/images/parshu-v1-v2/6.png"
       ],
       "summary": "Conceptual architecture and structural layout for the Parshu airframe.",
       "description": "The Parshu platform was developed entirely in the conceptual phase to establish base geometric and payload parameters. Iterations V1 and V2 focused heavily on packaging optimization, avionics placement, and ensuring a favorable center of gravity for dynamic flight operations.",
@@ -228,7 +240,9 @@
         "assets/models/rudra-v2.glb"
       ],
       "images": [
-        "assets/images/rudra-v2/1.jpg"
+        "assets/images/rudra-v2/1.png",
+        "assets/images/rudra-v2/2.png",
+        "assets/images/rudra-v2/3.png"
       ],
       "summary": "Advanced conceptual framework for Rudra iteration 2.",
       "description": "Applying the lessons learned from the initial V1 manufacturing prototype, the Rudra V2 conceptual model introduces significant geometric refinements. The focus is on reducing part count, streamlining assembly, and increasing the overall survivability of the platform.",
