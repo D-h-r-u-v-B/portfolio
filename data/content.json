@@ -75,12 +75,12 @@
       "category": "Manufacturing",
       "status": "Completed",
       "time": "April 2026",
-      "glbModel": "assets/models/perching_mec.glb",
+      "glbModel": "",
       "images": [
         "assets/images/perching-mechanism/1.jpg",
         "assets/images/perching-mechanism/2.jpg"
       ],
-      "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances. Analyzed multi-layer power transmission where gear 1 serves as the primary driver.",
+      "summary": "Multi-component weight-actuated payload delivery mechanism using tight geometric tolerances.",
       "description": "Engineered specifically for autonomous drone delivery applications, this passive release mechanism utilizes the payload's own mass to actuate the gripper release sequence. Strict geometric tolerances and gear ratio optimizations ensure reliable payload detachment without requiring auxiliary electronic actuators, reducing overall vehicle weight and complexity.",
       "specs": ["Actuation: Passive/Weight", "Tolerances: High Precision"],
       "tags": ["Kinematics", "SolidWorks", "DFM"],
@@ -108,7 +108,7 @@
       "category": "Manufacturing",
       "status": "Ongoing",
       "time": "Date TBD",
-      "glbModel": "",
+      "glbModel": "assets/models/rudra-v1.glb",
       "images": [
         "assets/images/rudra-v1/1.jpg"
       ],
@@ -124,7 +124,7 @@
       "category": "Manufacturing",
       "status": "Ongoing",
       "time": "Feb 2026 - Present",
-      "glbModel": "assets/models/vajra.glb",
+      "glbModel": "",
       "images": [
         "assets/images/vajra-v1/1.jpg",
         "assets/images/vajra-v1/2.jpg"
