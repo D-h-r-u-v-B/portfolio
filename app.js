@@ -200,7 +200,7 @@ function generateProjectDetail(projectId) {
                 </div>
             </div>
 
-            <div class="detail-media-container" style="height: 400px; margin-bottom: 3rem; border: 1px solid var(--border-glass); background: var(--bg-card-media); position: relative; overflow: hidden;">
+            <div class="detail-media-container" style="margin-bottom: 3rem; background: var(--bg-card-media); border-radius: 8px; padding: 20px; overflow: hidden;">
                 ${mediaContent}
             </div>
 
@@ -287,7 +287,7 @@ function renderProjectCards(filter) {
         // Master view: ONLY load the first image (no carousel)
         const coverImg = (project.images && project.images.length > 0) ? project.images[0] : '';
         const mediaContent = coverImg 
-            ? `<img src="${coverImg}" alt="${project.title}" style="width:100%;height:100%;object-fit:cover;opacity:0.85;transition:opacity 0.4s ease;" class="card-cover-img">`
+            ? `<img src="${coverImg}" alt="${project.title}" style="width:100%;height:100%;object-fit:contain;padding:1rem;opacity:0.85;transition:opacity 0.4s ease;" class="card-cover-img">`
             : `<div style="display:flex;align-items:center;justify-content:center;height:100%;" class="mono-text">No Visuals</div>`;
 
         const statusBadgeText = project.status || 'Ongoing';

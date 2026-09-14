@@ -410,9 +410,11 @@ body::before {
 /* Horizontal scroll track for image carousel */
 .carousel-track {
     display: flex;
+    gap: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    height: 100%;
+    align-items: center;
+    padding: 10px 0;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE/Edge */
 }
@@ -421,13 +423,16 @@ body::before {
 }
 
 .carousel-img {
-    flex: 0 0 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    scroll-snap-align: center;
     opacity: 0.85;
     transition: opacity 0.4s ease;
+    border-radius: 6px;
 }
 
 .card:hover .carousel-img,
