@@ -96,7 +96,11 @@
         "assets/models/pralay-v4.glb"
       ],
       "images": [
-        "assets/images/pralay-v4/1.jpg"
+        "assets/images/pralay-v4/1.png",
+        "assets/images/pralay-v4/2.png",
+        "assets/images/pralay-v4/3.png",
+        "assets/images/pralay-v4/4.png",
+        "assets/images/pralay-v4/5.png"
       ],
       "summary": "Iteration 4 manufacturing sequence of the Pralay defense architecture.",
       "description": "Building upon previous conceptual iterations, the V4 phase translates the Pralay architecture into physical, manufacturable components. This stage involves rigorous material selection and the development of custom fixturing to streamline the assembly of the primary chassis.",
@@ -132,7 +136,8 @@
         "assets/models/vajra-v1.glb"
       ],
       "images": [
-        "assets/images/vajra-v1/1.jpg"
+        "assets/images/vajra-v1/1.jpg",
+        "assets/images/vajra-v1/2.jpg"
       ],
       "summary": "Heavy-lift multirotor engineered for rapid fabrication and automated munition deployment.",
       "description": "Designed for rapid deployment and fabrication, this heavy-lift multirotor integrates carbon-polymer composites to maximize payload capacity. Extensive finite element analysis was conducted on the airframe to ensure it could withstand the severe modal vibrations and dynamic stress loads induced during automated munition release sequences.",
@@ -201,7 +206,11 @@
         "assets/models/pralay-v3.glb"
       ],
       "images": [
-        "assets/images/pralay-v3/1.jpg"
+        "assets/images/pralay-v3/1.png",
+        "assets/images/pralay-v3/2.png",
+        "assets/images/pralay-v3/3.png",
+        "assets/images/pralay-v3/4.png",
+        "assets/images/pralay-v3/5.png"
       ],
       "summary": "Evolution of the Pralay conceptual layout.",
       "description": "Spanning three major conceptual overhauls, the Pralay design evolution highlights an iterative approach to defense architecture. Each version progressively refined the airframe's stiffness-to-weight ratio and optimized the internal volumetric efficiency for modular payloads.",
