@@ -205,7 +205,7 @@ function generateProjectDetail(projectId) {
                 </div>
             </div>
 
-            <div class="detail-media-container" style="margin-bottom: 3rem; background: var(--bg-card-media); border-radius: 8px; padding: 20px; overflow: hidden;">
+            <div class="detail-media-container" style="height: 450px; margin-bottom: 3rem; background: var(--bg-card-media); border-radius: 8px; padding: 20px; position: relative; overflow: hidden;">
                 ${mediaContent}
             </div>
 
@@ -393,8 +393,33 @@ function closeModal() {
 
 function scrollCarousel(direction) {
     const track = document.querySelector('.carousel-track');
-    if (track) {
-        const scrollAmount = track.clientWidth * 0.75;
-        track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-    }
+    if (!track) return;
+    
+    const images = Array.from(track.querySelectorAll('.carousel-img'));
+    if (images.length === 0) return;
+    
+    const trackCenter = track.scrollLeft + (track.clientWidth / 2);
+    let closestIndex = 0;
+    let minDistance = Infinity;
+    
+    // Find the image currently in the center of the viewport
+    images.forEach((img, index) => {
+        const imgCenter = img.offsetLeft - track.offsetLeft + (img.clientWidth / 2);
+        const distance = Math.abs(imgCenter - trackCenter);
+        if (distance < minDistance) {
+            minDistance = distance;
+            closestIndex = index;
+        }
+    });
+    
+    // Target the exact next or previous image
+    let targetIndex = closestIndex + direction;
+    if (targetIndex < 0) targetIndex = 0;
+    if (targetIndex >= images.length) targetIndex = images.length - 1;
+    
+    // Scroll directly to the center of the targeted image
+    const targetImg = images[targetIndex];
+    const scrollPos = targetImg.offsetLeft - track.offsetLeft - (track.clientWidth / 2) + (targetImg.clientWidth / 2);
+    
+    track.scrollTo({ left: scrollPos, behavior: 'smooth' });
 }

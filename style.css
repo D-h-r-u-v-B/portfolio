@@ -415,6 +415,7 @@ body::before {
     scroll-snap-type: x mandatory;
     align-items: center;
     padding: 10px 0;
+    height: 100%; /* Force track to fill container height */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE/Edge */
 }
@@ -424,10 +425,9 @@ body::before {
 
 .carousel-img {
     flex: 0 0 auto;
-    width: auto;
+    height: 100%; /* Lock image height to container */
+    width: auto; /* Allow natural scaling */
     max-width: 100%;
-    height: auto;
-    max-height: 500px;
     object-fit: contain;
     scroll-snap-align: center;
     opacity: 0.85;
