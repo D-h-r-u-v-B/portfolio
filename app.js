@@ -148,7 +148,7 @@ function generateContact() {
             <div class="contact-links" style="display:flex; gap: 20px; flex-wrap: wrap;">
                 <a href="${profile.email}" class="btn contact-btn">EMAIL DIRECT</a>
                 <a href="${profile.linkedin}" target="_blank" class="btn contact-btn">LINKEDIN PROFILE</a>
-                <a href="${profile.phone}" class="btn contact-btn">+91 9780513503</a>
+                <button class="btn contact-btn" onclick="copyPhone('+91 9780513503', this)">+91 9780513503</button>
             </div>
         </section>
     `;
@@ -403,4 +403,23 @@ function scrollCarousel(direction) {
         const scrollAmount = (firstImg.clientWidth + 20) * direction;
         track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
+}
+
+function copyPhone(text, btnElement) {
+    navigator.clipboard.writeText(text).then(() => {
+        const originalText = btnElement.innerText;
+        btnElement.innerText = 'COPIED!';
+        btnElement.style.color = 'var(--text-primary)';
+        btnElement.style.backgroundColor = 'var(--accent-secondary)';
+        btnElement.style.borderColor = 'var(--accent-secondary)';
+        
+        setTimeout(() => {
+            btnElement.innerText = originalText;
+            btnElement.style.color = '';
+            btnElement.style.backgroundColor = '';
+            btnElement.style.borderColor = '';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
 }
