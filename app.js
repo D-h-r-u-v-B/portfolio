@@ -146,9 +146,9 @@ function generateContact() {
             <h2>Connect</h2>
             <p class="mono-text" style="margin-bottom: 2rem;">Seeking new opportunities or collaborations? My inbox is always open.</p>
             <div class="contact-links" style="display:flex; gap: 20px; flex-wrap: wrap;">
-                <a href="mailto:${profile.email}" class="btn contact-btn">EMAIL DIRECT</a>
+                <a href="${profile.email}" class="btn contact-btn">EMAIL DIRECT</a>
                 <a href="${profile.linkedin}" target="_blank" class="btn contact-btn">LINKEDIN PROFILE</a>
-                <a href="tel:${profile.phone}" class="btn contact-btn">CALL DIRECTLY</a>
+                <a href="${profile.phone}" class="btn contact-btn">+91 9780513503</a>
             </div>
         </section>
     `;
@@ -395,31 +395,12 @@ function scrollCarousel(direction) {
     const track = document.querySelector('.carousel-track');
     if (!track) return;
     
-    const images = Array.from(track.querySelectorAll('.carousel-img'));
-    if (images.length === 0) return;
-    
-    const trackCenter = track.scrollLeft + (track.clientWidth / 2);
-    let closestIndex = 0;
-    let minDistance = Infinity;
-    
-    // Find the image currently in the center of the viewport
-    images.forEach((img, index) => {
-        const imgCenter = img.offsetLeft - track.offsetLeft + (img.clientWidth / 2);
-        const distance = Math.abs(imgCenter - trackCenter);
-        if (distance < minDistance) {
-            minDistance = distance;
-            closestIndex = index;
-        }
-    });
-    
-    // Target the exact next or previous image
-    let targetIndex = closestIndex + direction;
-    if (targetIndex < 0) targetIndex = 0;
-    if (targetIndex >= images.length) targetIndex = images.length - 1;
-    
-    // Scroll directly to the center of the targeted image
-    const targetImg = images[targetIndex];
-    const scrollPos = targetImg.offsetLeft - track.offsetLeft - (track.clientWidth / 2) + (targetImg.clientWidth / 2);
-    
-    track.scrollTo({ left: scrollPos, behavior: 'smooth' });
+    // Find the first image to calculate roughly how far to push
+    const firstImg = track.querySelector('.carousel-img');
+    if (firstImg) {
+        // Push the scroll by one image's width + the 20px gap.
+        // CSS scroll-snap will automatically correct it and lock it to dead center!
+        const scrollAmount = (firstImg.clientWidth + 20) * direction;
+        track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
 }
