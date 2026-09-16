@@ -80,7 +80,7 @@
       "images": [
         "assets/images/space-debris/1.png",
         "assets/images/space-debris/2.png",
-        "assets/images/space-debris/3.png.jpg"
+        "assets/images/space-debris/3.png"
       ],
       "summary": "Research and development concerning orbital debris tracking and capture mechanics.",
       "description": "This R&D initiative explores the mechanical and kinetic challenges of capturing uncontrolled orbital debris. The project involves theoretical modeling of impact forces, material stress during capture, and the conceptual design of low-mass, high-strength containment mechanisms.",
