@@ -255,13 +255,38 @@
       "time": "June 2026 - Present",
       "glbModels": [],
       "images": [
-        "assets/images/nidar-27/1.png"
+        "assets/images/nidar-27/1.png",
+        "assets/images/nidar-27/2.png",
+        "assets/images/nidar-27/3.png",
+        "assets/images/nidar-27/4.png"
       ],
       "summary": "Design, manufacturing, and assembly architecture for the Nidar 27 competition.",
       "description": "A comprehensive design and assembly pipeline detailing the integration of critical sub-systems for the Nidar 27 competition. The focus of this phase is optimizing component geometry for rapid additive manufacturing without sacrificing structural integrity, ensuring the platform is fast and highly efficient to construct on an assembly line.",
       "specs": ["MTOW: 2.0kg", "Payload: 400g Delivery"],
       "tags": ["Creo", "Manufacturing", "Delivery Mechanism", "DFM"],
       "learning": ["Design for Assembly (DFA)", "Rapid Prototyping"]
+    },
+    {
+      "id": "rudra-v4",
+      "title": "Rudra V4",
+      "category": "Manufacturing",
+      "status": "Completed",
+      "time": "October - November 2026",
+      "glbModels": [],
+      "images": [
+        "assets/images/rudra-v4/1.png",
+        "assets/images/rudra-v4/2.png",
+        "assets/images/rudra-v4/3.png",
+        "assets/images/rudra-v4/4.png",
+        "assets/images/rudra-v4/5.png",
+        "assets/images/rudra-v4/6.png",
+        "assets/images/rudra-v4/7.png"
+      ],
+      "summary": "Heavy-lift multirotor with an 8kg payload capacity, modular payload system, and industrial-grade build quality designed for banner-dropping and heavy delivery missions.",
+      "description": "Rudra V4 is a heavy-lift multirotor platform engineered around a modular payload system capable of carrying up to 8kg, supporting rapid swaps between a custom banner-dropping payload mechanism and other mission-specific delivery modules. Built with a strong emphasis on Design for Manufacturing (DFM) and clean mechanical integration, its enclosed fuselage, structural precision, and surface finish deliver a polished appearance and build standard directly comparable to commercial industrial drones.",
+      "specs": ["Max Payload Capacity: 8kg", "Payload System: Modular Architecture & Banner-Dropping Mechanism", "Build Standard: Industrial-Grade Enclosed Airframe"],
+      "tags": ["Creo", "Manufacturing", "Delivery Mechanism", "DFM"],
+      "learning": ["Modular Payload Architecture", "Industrial-Grade DFM & Aesthetics"]
     }
   ]
 }
