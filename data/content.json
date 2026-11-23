@@ -253,7 +253,9 @@
       "category": "Manufacturing",
       "status": "Ongoing",
       "time": "June 2026 - Present",
-      "glbModels": [],
+      "glbModels": [
+        "assets/models/nidar-27.glb"
+      ],
       "images": [
         "assets/images/nidar-27/1.png",
         "assets/images/nidar-27/2.png",
@@ -272,7 +274,9 @@
       "category": "Manufacturing",
       "status": "Completed",
       "time": "October - November 2026",
-      "glbModels": [],
+      "glbModels": [
+        "assets/models/rudra-v4.glb"
+      ],
       "images": [
         "assets/images/rudra-v4/1.png",
         "assets/images/rudra-v4/2.png",
